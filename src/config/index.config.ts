@@ -5,10 +5,13 @@ import dotenv from 'dotenv';
 
 type serverConfig = {
     PORT: number;
+    
 };
 
 export function loadEnv() {
     dotenv.config();
 }
 loadEnv();
-export const serverConfig = {};
+export const serverConfig: serverConfig = {
+    PORT: Number(process.env.PORT) || 3000,
+};

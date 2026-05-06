@@ -41,7 +41,8 @@
     "moduleDetection": "force",
     "skipLibCheck": true,
     "outDir": "./dist",
-    "rootDir": "./src"
+    "rootDir": "./src",
+    "allowImportingTsExtensions": true
   },
   "include": [
     "src/**/*"
